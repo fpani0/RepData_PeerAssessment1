@@ -1,4 +1,4 @@
-# Knitr Assignment (Peer Assignment #1)
+# Knitr Assignment (Peer Assignment #1 - Nov 2017)
 
 ## Loading and preprocessing the data
 ```{r, processData}
@@ -7,7 +7,7 @@ data <- read.csv("activity.csv")
 ```
 
 ## What is mean total number of steps taken per day?
-### Calculate the total number of steps taken per day
+### Calculate the total number of steps taken per day.
 ```{r}
 stepsByDay <- aggregate(steps ~ date, data, sum, na.rm=TRUE)
 ```
